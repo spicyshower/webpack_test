@@ -1,0 +1,15 @@
+// base color
+$main-color: #558AD2 !default;
+$main-hover: #2b69bd !default;
+$accent-color: #FF8C00 !default;
+$accent-hover: #ff6600 !default;
+$notice: #E84924 !default;
+
+// text
+$text: #3A3F48 !default;
+$light-text: lighten($text, 35%) !default;
+
+// link
+$link-color: #aaa !default;
+$link-hover-color: darken($link-color, 5%) !default;
+

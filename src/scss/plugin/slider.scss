@@ -1,0 +1,54 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+  }
+  &.small {
+    height: 60%;
+    margin-top: 1.5rem;
+  }
+
+  // slider-main
+  &-main {
+    flex-basis: 80%;
+    max-width: 80%;
+    height: 100%;
+    position: relative;
+    li {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+      }
+    }
+  }
+
+  // slider-nav
+  &-nav {
+    flex-basis: 18%;
+    max-width: 18%;
+    li {
+      cursor: pointer;
+      &+ li {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+
+.obj-fit {
+  object-fit: contain;
+  object-position: center;
+  font-family: 'object-fit: contain;';
+}

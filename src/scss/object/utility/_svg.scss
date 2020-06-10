@@ -1,0 +1,150 @@
+.svg {
+  display: none;
+}
+
+.icon {
+
+  // .icon hover時
+  &:hover {
+    .icon{
+      &-calendar-fill,
+      &-gear-fill,
+      &-users,
+      &-bell-fill {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__wrap {
+    margin-bottom: 8px;
+  }
+
+  &-logo {
+    width: 258.415px;
+    height: 84.033;
+  }
+
+  &-calendar {
+    width: 17px;
+    height: 17px;
+    transition: fill .3s;
+    &-fill {
+      width: 25px;
+      height: 25px;
+      transition: fill .3s;
+    }
+  }
+  &-gear {
+    width: 17px;
+    height: 17px;
+    transition: fill .3s;
+    &-fill {
+      width:23.756px;
+      height:25.005px;
+      transition: fill .3s;
+    }
+  }
+  &-balloon {
+    width: 18.612px;
+    height: 15.22px;
+    transition: fill .3s;
+    &-fill {
+      width: 17.674px;
+      height: 14.453px;
+      transition: fill .3s;
+    }
+  }
+  &-bell {
+    width: 12.18px;
+    height: 17.01px;
+    transition: fill .3s;
+    &-fill {
+      width: 16.282px;
+      height: 23.269px;
+      transition: fill .3s;
+    }
+  }
+  &-arrow {
+    width: 9.061px;
+    height: 5.591px;
+    transition: fill .3s;
+    &--blue {
+      width: 14px;
+      height: 8px;
+      stroke: $main-color;
+      transition: fill .3s;
+    }
+  }
+  &-user {
+    width: 17.308px;
+    height: 22.715px;
+    transition: fill .3s;
+    $el:#{&};
+    &--blue {
+      @extend #{$el};
+      fill: $main-color;
+    }
+  }
+  &-users {
+    width: 26px;
+    height: 26px;
+    transition: fill .3s;
+  }
+  &-store {
+    width: 25px;
+    height: 22.5px;
+    transition: fill .3s;
+    $el:#{&};
+    &--blue {
+      @extend #{$el};
+      fill: $main-color;
+    }
+  }
+  &-carte {
+    width: 13.57px;
+    height: 15.07px;
+    transition: fill .3s;
+  }
+  &-history {
+    width: 16.33px;
+    height: 18.15px;
+    transition: fill .3s;
+  }
+  &-download {
+    width: 14px;
+    height: 15px;
+    transition: .3s;
+    #line,
+    #arrow {
+      width: 14px;
+      height: 15px;
+      stroke: $main-color;
+    }
+    #border {
+      width: 14px;
+      height: 15px;
+      fill: $main-color;
+    }
+  }
+  &-edit {
+    width: 14.263px;
+    height: 14px;
+    fill: $main-color;
+  }
+
+}
+
+.circle {
+  width:18px;
+  height:18px;
+  fill: #dce3ef;
+}
+
+
+// edge
+_:-ms-lang(x)::backdrop,
+.icon-user--blue,
+.icon-store--blue {
+  pointer-events: none;
+}

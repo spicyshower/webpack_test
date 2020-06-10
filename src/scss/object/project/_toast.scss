@@ -1,0 +1,45 @@
+.p-toast {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  top: 125px;
+  right: 25px;
+  width: 372px;
+  padding: 18px;
+  border-radius: 3px;
+  z-index: 100;
+  &--complete {
+    @extend .p-toast;
+    background-color: #4FC497;
+  }
+  &--error {
+    @extend .p-toast;
+    background-color: #F03A47;
+  }
+
+  // p-toast__icon
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  // p-toast__content
+  &__content {
+    line-height: 1.7;
+    margin-left: 15px;
+    h2 {
+      margin-bottom: 3px;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

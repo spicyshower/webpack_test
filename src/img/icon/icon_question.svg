@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="icon_question" transform="translate(-301 -661)">
+    <g id="楕円形_65" data-name="楕円形 65" transform="translate(301 661)" fill="#fff" stroke="#558ad2" stroke-width="2">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7" fill="none"/>
+    </g>
+    <text id="_" data-name="?" transform="translate(306.5 673)" fill="#558ad2" font-size="10" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">?</tspan></text>
+  </g>
+</svg>

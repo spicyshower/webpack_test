@@ -1,0 +1,56 @@
+.c-{
+  // .c-title
+  &title{
+
+    // .c-title__main
+    &__main {
+      position: relative;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $text;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60%;
+        height: 1px;
+        background-color: $text;
+      }
+      &--border {
+        margin-bottom: 4.6rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $main-color;
+      }
+    }
+
+    // .c-title__primary
+    &__primary {
+      border-bottom: 1px solid $main-color;
+      overflow: hidden;
+      span {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        min-width: 450px;
+        padding: 10px;
+        background-color: $main-color;
+        border-radius: 3px 0 0 0;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -36px;
+          border: 18px solid $main-color;
+          border-top: 36px solid transparent;
+          border-right: 18px solid transparent;
+        }
+      }
+    }
+
+    // .c-title__sub
+    &__sub {
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+    }
+  }
+}

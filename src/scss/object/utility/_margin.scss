@@ -1,0 +1,65 @@
+.u-m{
+
+  // top  .u-mt__0 - 100
+  &t__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        margin-top: #{$i * 5}px;
+      }
+      &#{$i}vw {
+        margin-top: #{$i}vw;
+      }
+    }
+    &12 {
+      margin-top: 1.2rem;
+    }
+  }
+
+  // bottom  .u-mb__0 - 100
+  &b__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        margin-bottom: #{$i * 5}px;
+      }
+    }
+    &12 {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  // left
+  &l__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        margin-left: #{$i * 5}px;
+      }
+    }
+  }
+
+  // right
+  &r__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        margin-right: #{$i * 5}px;
+      }
+    }
+  }
+
+  // vertical
+  &vert__{
+    @for $i from 1 through 20 {
+      &#{$i * 5} {
+        margin: #{$i * 5}px 0;
+      }
+    }
+  }
+
+  // horizon
+  &hori__{
+    @for $i from 1 through 20 {
+      &#{$i * 5} {
+        margin: 0 #{$i * 5}px;
+      }
+    }
+  }
+}

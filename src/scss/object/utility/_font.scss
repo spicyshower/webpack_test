@@ -1,0 +1,54 @@
+.u-font {
+
+  // font-size
+  &--s {
+    &__12 {
+      font-size: 1.2rem;
+    }
+    &__14 {
+      font-size: 1.4rem;
+    }
+    &__16 {
+      font-size: 1.6rem;
+    }
+    &__18 {
+      font-size: 1.8rem;
+    }
+    &__20 {
+      font-size: 2rem;
+    }
+    &__22 {
+      font-size: 2.2rem;
+    }
+  }
+
+  // font-weight
+  &--w {
+    &__bold {
+      font-weight: bold;
+    }
+    &__normal {
+      font-weight: normal;
+    }
+  }
+
+  // color
+  &--c {
+    &__text {
+      color: $text;
+    }
+  }
+
+  // text align
+  &--a {
+    &__center {
+      text-align: center;
+    }
+    &__right {
+      text-align: right;
+    }
+    &__left {
+      text-align: left;
+    }
+  }
+}

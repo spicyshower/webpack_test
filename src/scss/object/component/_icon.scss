@@ -1,0 +1,17 @@
+.c-icon {
+
+  // c-icon__question
+  &__question {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+      background: url(/img/icon/icon_question.svg) no-repeat;
+      background-size: 16px 16px;
+    }
+  }
+}

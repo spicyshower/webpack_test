@@ -1,0 +1,150 @@
+.p-{
+
+  // .p-tab
+  &tab {
+    width: 30%;
+
+    // .p-tab__item
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $main-color;
+      text-align: center;
+      width: 100%;
+      height: 54px;
+      background-color: #D2E4FC;
+      border-radius: 3px 3px 0 0;
+      transition: .3s;
+      &.current {
+        color: #fff;
+        background-color: $main-color;
+        pointer-events: none;
+        .icon- {
+          &history,
+          &carte,
+          &balloon-fill {
+            fill: #fff;
+          }
+        }
+      }
+      &:hover {
+        color: #fff;
+        background: $main-color;
+        .icon- {
+          &history,
+          &carte,
+          &balloon-fill {
+            fill: #fff;
+          }
+        }
+      }
+      .icon- {
+        &history,
+        &carte,
+        &balloon-fill{
+          margin-right: .5rem;
+          fill: $text;
+        }
+        &carte {
+          margin-bottom: 5px;
+        }
+        &history,
+        &balloon-fill {
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    // .p-tab--inner
+    &--inner {
+      flex-basis: 30%;
+      max-width: 30%;
+      align-self: flex-end;
+
+      // .p-tab--inner__item
+      &__item {
+        display: block;
+        color: #DCE3EF;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        border-bottom: 2px solid #DCE3EF;
+        transition: .3s;
+        &:hover {
+          color: $main-color;
+          border-bottom: 2px solid $main-color;
+        }
+        &.current {
+          color: $main-color;
+          border-bottom: 2px solid $main-color;
+          pointer-events: none;
+        }
+      }
+    }
+
+
+    // .p-tabs
+    &s {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $main-color;
+
+      // column
+      &.column {
+        display: block;
+        border-bottom: 0;
+
+        // column p-tab
+        .p-tab {
+          width: 100%;
+          $el: ".p-tab";
+          & + #{$el} {
+            margin-top: 1.2rem;
+          }
+          
+          // column p-tab__item
+          &__item {
+            font-size: 1.6rem;
+            height: 72px;
+            border-radius: 3px;
+            border: 2px solid $main-color;
+            position: relative;
+            overflow: hidden;
+            &::after {
+              content: "";
+              position: absolute;
+              display: block;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              border: 0 solid $main-color;
+              transition: .3s;
+            }
+            &:not(.current) {
+              background-color: transparent;
+              &:hover {
+                &::after {
+                  border: 2px solid $main-color;
+                }
+              }
+            }
+            &.current {
+              pointer-events: none;
+            }
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+      
+      // .p-tabs--inner
+      &--inner {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

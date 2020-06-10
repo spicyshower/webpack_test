@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15">
+  <g id="icon_download" transform="translate(-653 -977)">
+    <line id="line" y2="9" transform="translate(660 977)" fill="none" stroke="#558ad2" stroke-width="2"/>
+    <path id="arrow" d="M3623.09-69.6l4.931,4.931,4.931-4.931" transform="translate(-2968.159 1051.53)" fill="none" stroke="#558ad2" stroke-width="2"/>
+    <rect id="border" width="14" height="2" transform="translate(653 990)" fill="#558ad2"/>
+  </g>
+</svg>

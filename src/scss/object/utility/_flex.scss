@@ -1,0 +1,73 @@
+.u-flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__start {
+    @extend .u-flex;
+    justify-content: flex-start;
+  }
+
+  &__end {
+    @extend .u-flex;
+    justify-content: flex-end;
+  }
+
+  &__center {
+    @extend .u-flex;
+    justify-content: center;
+  }
+
+  &__btw {
+    @extend .u-flex;
+    justify-content: space-between;
+  }
+
+  &__even {
+    @extend .u-flex;
+    justify-content: space-evenly;
+  }
+
+  &__half {
+    @extend .u-flex;
+    & > * {
+      flex-basis: 50%;
+      max-width: 50%;
+      &:nth-child(n+3) {
+        margin-top: 1.2rem;
+      }
+    }
+  }
+  &__third {
+    @extend .u-flex;
+    & > * {
+      flex-basis: 33%;
+      max-width: 33%;
+      &:nth-child(n+4) {
+        margin-top: 1.2rem;
+      }
+    }
+  }
+
+  &.ai {
+    &--start {
+      align-items: flex-start;
+    }
+    &--end {
+      align-items: flex-end;
+    }
+  }
+  & > .sh {
+    &0 {
+      flex-shrink: 0;
+    }
+  }
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.self {
+  &--end {
+    align-self: flex-end;
+  }
+}

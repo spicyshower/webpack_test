@@ -1,0 +1,225 @@
+.talk {
+  height: 65vh;
+
+  &.modal {
+    height: 95%;
+  }
+
+  // .talkballoon
+  &balloon {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    $el: #{&};
+
+    // .talkballoon__inner
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &__icon {
+      flex-shrink: 0;
+      flex-basis: 50px;
+      max-width: 50px;
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+      background-color: #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 50px;
+        height: auto;
+      }
+    }
+
+    // talkballoon__user
+    &__user {
+      width: 100%;
+      color: #a4acba;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    // talkballoon__talk
+    &__talk {
+      position: relative;
+      display: inline-block;
+      line-height: 1.4;
+      max-width: 70%;
+      padding: 2rem;
+      background-color: #aac4e8;
+      border-radius: 0 9px 9px 9px;
+      &[data-time] {
+        &::after {
+          content: attr(data-time);
+          color: #a4acba;
+          font-size: 1.2rem;
+          position: absolute;
+          bottom: 0;
+          right: -3em;
+        }
+      }
+      &.white {
+        background-color: #fff !important;
+      }
+      &.img {
+        line-height: 1;
+        width: 300px;
+        padding: 0;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 0 9px 9px 9px;
+        }
+      }
+      .block {
+        margin-top: 1rem;
+      }
+      .title {
+        color: #7f899c;
+        display: block;
+        width: 100%;
+        margin-bottom: 1.2rem;
+        padding-bottom: 1.2rem;
+        border-bottom: 2px solid #7f899c;
+      }
+    }
+
+    &.you {
+      justify-content: flex-end;
+      #{$el} {
+        &__user {
+          text-align: right;
+        }
+        &__talk {
+          background-color: #fff;
+          border-radius: 9px 0 9px 9px;
+          &[data-time] {
+            &::after {
+              right: auto;
+              left: -3em;
+            }
+          }
+          &[data-read="true"] {
+            &::before {
+              content: "既読";
+              color: #a4acba;
+              font-size: 1.2rem;
+              position: absolute;
+              bottom: 1.5em;
+              left: -2.5em;
+            }
+          }
+        }
+        &__inner {
+          justify-content: flex-end;
+        }
+      }
+    }
+    &.try-kun {
+      #{$el} {
+        &__talk {
+          background-color: #ffc57d;
+        }
+      }
+    }
+
+    // .talkballoon.date
+    &.date {
+      color: lighten($text, 30%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 0 0;
+      &::before,
+      &::after {
+        content: "";
+        width: 24px;
+        height: 2px;
+        margin: 2px 5px 0;
+        background-color: lighten($text, 30%);
+      }
+    }
+
+    // .talkballoon.system
+    &.system {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.7;
+      max-width: 70%;
+      margin-right: auto;
+      margin-left: auto;
+      span {
+        display: inline-block;
+        color: $text;
+        padding: 8px 18px;
+        border-radius: 3rem;
+        background-color: rgba(129, 138, 154, 0.15);
+      }
+    }
+  }
+
+  // .talk__box
+  &__box {
+    height: 100%;
+    margin-top: 1.5rem;
+    background-color: #e4f1fe;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    &.small {
+      height: 86%;
+    }
+
+    // .talk__box__ui
+    &__ui {
+      position: relative;
+      width: 100%;
+      background-color: #f2f2f2;
+      border-radius: 0 0 3px 3px;
+      .parts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        &__item {
+          &--icon {
+            margin: 0;
+          }
+          &--textbox {
+            width: calc(100% - 60px);
+            margin: 0;
+            .searchbox {
+              width: calc(100% - 70px);
+            }
+            .submit {
+              width: 70px;
+              white-space: nowrap;
+              padding: 10px 10px 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.timeline {
+  position: relative;
+  height: calc(100% - 68px);
+  padding: 0 2.4rem 4rem;
+  &.fullscreen {
+    height: 100%;
+  }
+  .talkballoon {
+    &:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+}

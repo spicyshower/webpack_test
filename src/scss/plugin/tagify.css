@@ -1,0 +1,100 @@
+.ui-autocomplete-input {
+  border: 0;
+  vertical-align: -.4rem;
+}
+
+.ui-autocomplete-input:focus {
+  outline: 0;
+}
+
+.tagify-recommend {
+  display: none;
+  position: absolute;
+  height: 100px;
+  background-color: #fcfcfc;
+  border: 2px solid #dce3ef;
+  border-top: 0;
+  z-index: 100;
+}
+
+.tagify-recommend li {
+  width: 100%;
+  padding: .8rem 1.6rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.tagify-recommend li:hover {
+  background-color: #efefef;
+}
+
+.tagify-container {
+  position: relative;
+  padding: 0 1.5rem .9rem .8rem;
+  background-color: #fcfcfc;
+  border: 2px solid #dce3ef;
+  border-radius: 3px;
+}
+
+.tagify-container::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  bottom: 0;
+  width: 6px;
+  height: 12px;
+  margin: auto 0;
+  background: url(/img/icon/icon_arrow-list.svg) no-repeat center;
+  background-size: 6px 12px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tagify-container.on::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.tagify-container input {
+  vertical-align: -4px;
+  border: 0;
+}
+
+.tagify-container input:focus {
+  outline: 0;
+}
+
+.tagify-container span {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.4rem;
+  overflow: visible;
+  outline: none;
+  vertical-align: middle;
+  margin-top: .8rem;
+  margin-right: .5rem;
+  padding: 0.8rem;
+  white-space: nowrap;
+  background-color: #55d2c8;
+  text-decoration: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tagify-container span a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 0.8rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tagify-container span a:last-child:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=tagify.css.map */

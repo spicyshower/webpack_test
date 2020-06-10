@@ -1,0 +1,36 @@
+.info {
+
+  // info__box
+  &__box {
+    position: relative;
+    height: 65vh;
+
+    // info__box__inner
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      width: 77%;
+      dl {
+        flex-basis: 33%;
+        max-width: 33%;
+        margin-top: 3rem;
+        &.extend {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+        dt {
+          color: #A5AEBE;
+        }
+        dd {
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 3rem;
+  }
+}

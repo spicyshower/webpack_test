@@ -1,0 +1,59 @@
+.u-p{
+
+  // top  .u-pt__0 - 100
+  &t__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        padding-top: #{$i * 5}px;
+      }
+      &#{$i}vw {
+        padding-top: #{$i}vw;
+      }
+    }
+  }
+
+  // bottom  .u-pb__0 - 100
+  &b__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        padding-bottom: #{$i * 5}px;
+      }
+    }
+  }
+
+  // left
+  &l__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        padding-left: #{$i * 5}px;
+      }
+    }
+  }
+
+  // right
+  &r__{
+    @for $i from 0 through 20 {
+      &#{$i * 5} {
+        padding-right: #{$i * 5}px;
+      }
+    }
+  }
+
+  // vertical
+  &vert__{
+    @for $i from 1 through 20 {
+      &#{$i * 5} {
+        padding: #{$i * 5}px 0;
+      }
+    }
+  }
+
+  // horizon
+  &hori__{
+    @for $i from 1 through 20 {
+      &#{$i * 5} {
+        padding: 0 #{$i * 5}px;
+      }
+    }
+  }
+}

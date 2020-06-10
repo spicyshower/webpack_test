@@ -1,0 +1,72 @@
+.p-link {
+  
+  // p-link__box
+  &__box {
+    display: flex;
+    align-items: center;
+    color: $main-color;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 20px 27px;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #DCE3EF;
+    border-radius: 3px;
+    transition: .3s;
+    &:hover {
+      background-color: #e6e6e6;
+    }
+
+    // p-link__box--arrow
+    &--arrow {
+      @extend .p-link__box;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
+        width: 7.58px;
+        height: 13px;
+        background: url(/img/icon/icon_arrow-list.svg) no-repeat;
+      }
+    }
+  }
+
+  // p-link__back
+  &__back {
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding-left: 1.8rem;
+    position: relative;
+    transition: 0.3s;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 7.58px;
+      height: 13px;
+      margin: auto 0;
+      background: url(/img/icon/icon_arrow-list.svg) no-repeat;
+      transform: rotate(180deg);
+    }
+  }
+
+  // p-link--ul
+  &--ul {
+    color: $main-color;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 2px solid $main-color;
+    transition: .3s;
+    &:hover {
+      border-bottom: 2px solid transparent;
+    }
+    &.disable {
+      pointer-events: none;
+      opacity: .6;
+    }
+  }
+}

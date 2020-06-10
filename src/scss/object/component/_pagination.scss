@@ -1,0 +1,99 @@
+.c-{
+
+  // .c-pagination
+  &pagination {
+    margin-top: 4rem;
+
+    // .c-pagination__list
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // .c-pagination__num
+    &__num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-top: 4rem;
+      span {
+        &.visible {
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+}
+
+// .c-pagination__list > nav
+.nav {
+  &__item {
+    &__link {
+      display: inline-block;
+      font-size: 1.8rem;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: 2px solid $main-color;
+      border-radius: 3px;
+      transition: .3s;
+      &:hover {
+        color: #fff;
+        background-color: $main-color;
+      }
+      &.current {
+        color: #fff;
+        background-color: $main-hover;
+        border: 2px solid $main-hover;
+        pointer-events: none;
+      }
+      &.disable {
+        color: #B1B1B1;
+        border: 2px solid #D6D6D6;
+        background-color: #D6D6D6;
+        pointer-events: none;
+        cursor: default;
+      }
+      &.arrow {
+        border: 0;
+        &:hover {
+          color: #fff;
+          background-color: transparent;
+        }
+        &.prev,
+        &.next {
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 7.58px;
+            height: 13px;
+            background: url(/img/icon/icon_arrow-list.svg) no-repeat;
+          }
+          &:hover {
+            opacity: .6;
+          }
+          &.disable {
+            background: none;
+            &:before {
+              background: url(/img/icon/icon_arrow-list-disable.svg) no-repeat;
+              pointer-events: none;
+              cursor: default;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        &.prev {
+          &::before {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    & + .nav__item {
+      margin-left: 20px;
+    }
+  }
+}

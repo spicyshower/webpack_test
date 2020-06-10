@@ -1,0 +1,31 @@
+// news
+
+.news {
+
+  // news__box
+  &__box {
+    margin-top: 4.2rem;
+
+    &--right {
+      text-align: right;
+      margin: -14px 0 14px;
+    }
+
+    // news__box__item
+    &__item {
+      line-height: 1.7;
+      margin-bottom: 2.4rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .date {
+        color: #A5AEBE;
+        font-size: 1.6rem;
+        margin-top: .6rem;
+      }
+    }
+  }
+
+  
+}

@@ -1,0 +1,13 @@
+.login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #DCE3EF;
+  &--head {
+    @extend .login;
+    display: block;
+  }
+}

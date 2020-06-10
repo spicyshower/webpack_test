@@ -1,0 +1,28 @@
+// ----------------------------
+//  footer
+// ----------------------------
+
+.l-footer {
+  font-size: 1.4rem;
+  width: 100%;
+
+  // l-footer__nav
+  &__nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        & + li {
+          &::before {
+            content: "|";
+            margin-left: 2.5rem;
+            padding-right: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+
+}

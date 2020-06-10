@@ -1,0 +1,48 @@
+.selectbox--data {
+  position: relative;
+  width: 100%;
+  padding: 17px;
+  background-color: #FCFCFC;
+  border: 2px solid #DCE3EF;
+  border-radius: 3px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1.8rem;
+    bottom: 0;
+    width: 6px;
+    height: 12px;
+    margin: auto 0;
+    transform: rotateZ(90deg) rotateY(0deg);
+    background: url(/img/icon/icon_arrow-list.svg) no-repeat;
+    background-size: 6px 12px;
+    transition: transform .5s;
+  }
+  &.on {
+    &::after {
+      transform: rotateZ(90deg) rotateY(180deg);
+    }
+  }
+}
+.selectbox {
+  position: relative;
+  width: 100%;
+  margin-top: -3px;
+  max-height: 150px;
+  background-color: #FCFCFC;
+  border: 2px solid #DCE3EF;
+  border-top: 0;
+  li {
+    cursor: pointer;
+    padding: 17px;
+    transition: .3s;
+    &.selected {
+      cursor: default;
+    }
+    &.hover {
+      background-color: #dadada;
+    }
+  }
+}

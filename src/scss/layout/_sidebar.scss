@@ -1,0 +1,14 @@
+.l-{
+
+  // l-sidebar 
+  &sidebar {
+    width: 100%;
+    max-width: 340px;
+    height: 80vh;
+    flex-shrink: 0;
+
+    & > .column {
+      padding: 4rem 0;
+    }
+  }
+}

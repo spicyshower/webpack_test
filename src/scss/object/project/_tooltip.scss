@@ -1,0 +1,83 @@
+.p-tooltip {
+  display: inline-block;
+  position: relative;
+
+  // .p-tooltip--hover
+  &--hover {
+    @extend .p-tooltip;
+
+    // .p-tooltip--hover__title
+    &__title {
+      margin-left: 1.8rem;
+      &--orange {
+        @extend .p-tooltip--hover__title;
+        color: $accent-color;
+      }
+      &--red {
+        @extend .p-tooltip--hover__title;
+        color: #F03A47;
+      }
+    }
+
+    .p-tooltip__content {
+      top: 30px;
+      left: 18px;
+      z-index: 10;
+    }
+  }
+  & + & {
+    margin-left: 1.2rem;
+  }
+
+  // .p-tooltip__title
+  &__title {
+    position: relative;
+    font-size: 1.2rem;
+    padding: 6px 40px 6px 8px;
+    background-color: #DCE3EF;
+    border-radius: 3px;
+    &::after {
+      content: "i";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 8px;
+      color: #DCE3EF;
+      width: 18px;
+      height: 18px;
+      margin: auto 0;
+      background-color: $text;
+      border-radius: 50%;
+    }
+  }
+
+  // .p-tooltip__content
+  &__content {
+    display: none;
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    top: 46px;
+    left: 0;
+    width: 242px;
+    padding: 1.2rem 1.4rem;
+    background-color: #DCE3EF;
+    border-radius: 3px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -26px;
+      border: 16px solid transparent;
+      border-bottom: 20px solid #DCE3EF;
+    }
+    &__inner {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-height: 133px;
+    }
+  }
+}
