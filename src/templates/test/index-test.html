@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentry</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-header__inner">
+        <a href="/" class="logo">
+          <img src="./img/common/logo.svg" alt="おくすりセントリー">
+        </a>
+        <div class="l-header__block">
+          <div class="l-header__block__box">
+            <ul class="list-btn">
+              <li class="list-btn__item">
+                <button type="button" class="c-btn c-btn--l c-btn--primary--rev" data-modal="invite">患者さんを招待する</button>
+              </li>
+              <li class="list-btn__item">
+                <a href="#" class="icon">
+                  <span class="icon__wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-calendar-fill">
+                      <use xlink:href="./all.svg#icon_calendar-fill">
+                    </svg>
+                  </span>
+                  <span>カレンダー</span>
+                </a>
+              </li>
+              <li class="list-btn__item">
+                <a href="./mypage/" class="icon">
+                  <span class="icon__wrap">
+                    <svg class="icon-gear-fill">
+                      <use xlink:href="../all.svg#icon_gear-fill">
+                    </svg>
+                  </span>
+                  <span>マイページ</span>
+                </a>
+              </li>
+              <li class="list-btn__item">
+                <a href="/" class="icon">
+                  <span class="icon__wrap">
+                    <svg class="icon-users">
+                      <use xlink:href="./all.svg#icon_users">
+                    </svg>
+                  </span>
+                  <span>患者一覧</span>
+                </a>
+              </li>
+              <li class="list-btn__item">
+                <a href="#" class="icon notice" data-num="99" data-popup="true">
+                  <span class="notice icon__wrap">
+                    <svg class="icon-bell-fill">
+                      <use xlink:href="./all.svg#icon_bell-fill"></use>
+                    </svg>
+                  </span>
+                  <span>通知</span>
+                </a>
+                <dl class="balloon">
+                  <dt class="balloon__title">通知</dt>
+                  <dd class="balloon__contents no-mb">
+                    <ul class="list-balloon scrollbar">
+                      <li class="list-balloon__item unread">
+                        <span class="status">未読</span>
+                        <div class="user-box__img"></div>
+                        <dl>
+                          <dt>鈴木一郎</dt>
+                          <dd>こんにちは。テキストが入ります。テキスト...</dd>
+                        </dl>
+                      </li>
+                      <li class="list-balloon__item unread">
+                        <span class="status">未読</span>
+                        <div class="user-box__img"></div>
+                        <dl>
+                          <dt>鈴木一郎</dt>
+                          <dd>こんにちは。テキストが入ります。テキスト...</dd>
+                        </dl>
+                      </li>
+                      <li class="list-balloon__item unread">
+                        <span class="status">未読</span>
+                        <div class="user-box__img"></div>
+                        <dl>
+                          <dt>鈴木一郎</dt>
+                          <dd>こんにちは。テキストが入ります。テキスト...</dd>
+                        </dl>
+                      </li>
+                      <li class="list-balloon__item unread">
+                        <span class="status">未読</span>
+                        <div class="user-box__img"></div>
+                        <dl>
+                          <dt>鈴木一郎</dt>
+                          <dd>こんにちは。テキストが入ります。テキスト...</dd>
+                        </dl>
+                      </li>
+                      <li class="list-balloon__item">
+                        <span class="status">既読</span>
+                        <div class="user-box__img"></div>
+                        <dl>
+                          <dt>鈴木一郎</dt>
+                          <dd>こんにちは。テキストが入ります。テキスト...</dd>
+                        </dl>
+                      </li>
+                      <li class="list-balloon__item">
+                        <span class="status">既読</span>
+                        <div class="user-box__img"></div>
+                        <dl>
+                          <dt>鈴木一郎</dt>
+                          <dd>こんにちは。テキストが入ります。テキスト...</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="l-header__block__box">
+            <a href="#" class="user-box" data-popup="true">
+              <figure class="user-box__img">
+                <img src="#" alt="">
+              </figure>
+              <dl class="user-box__info">
+                <dt class="user-box__info--title">
+                  <span class="icon menu">現在のユーザー</span>
+                  <svg class="icon icon-arrow--blue">
+                    <use xlink:href="../all.svg#icon_arrow"></use>
+                  </svg>
+                </dt>
+                <dd class="user-box__info--data">
+                  <ul>
+                    <li>テスト薬局 西新宿店様</li>
+                    <li>せんとり よしこ先生</li>
+                  </ul>
+                </dd>
+              </dl>
+            </a>
+            <dl class="balloon menu">
+              <dt class="balloon__title">ユーザーを切り替える</dt>
+              <dd class="balloon__contents no-mb">
+                <ul class="list-balloon menu">
+                  <li>
+                    <a href="#" class="list-balloon__item">
+                      <div class="user-box__img"></div>
+                      <dl>
+                        <dt>テスト薬局　西新宿店様</dt>
+                        <dd>○○ ○○ 先生</dd>
+                      </dl>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-balloon__item">
+                      <div class="user-box__img"></div>
+                      <dl>
+                        <dt>テスト薬局　西新宿店様</dt>
+                        <dd>○○ ○○ 先生</dd>
+                      </dl>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-balloon__item">
+                      <div class="user-box__img"></div>
+                      <dl>
+                        <dt>テスト薬局　西新宿店様</dt>
+                        <dd>○○ ○○ 先生</dd>
+                      </dl>
+                    </a>
+                  </li>
+                  <li class="list-balloon__item no-hover nobg">
+                    <a href="#" class="link">ログアウトする</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="l-main">
+
+      <div class="p-user--l">
+        <div class="p-user--l__icon">
+          <img src="../img/icon/icon_thumb-try-kun.svg" alt="">
+        </div>
+        <div class="p-user--l__name">
+          <div class="store">テスト薬局　西新宿店様</div>
+          <div class="name"><span class="name__text">せんとり　よしこ</span>先生</div>
+        </div>
+      </div>
+
+      <form action="#" class="p-form">
+        <ul class="p-form__option options">
+          <li class="options__item">
+            <input class="p-form__parts textbox searchbox" type="text" placeholder="名前もしくは電話番号で検索できます。"><button class="c-btn c-btn--primary submit" type="submit">検索</button>
+          </li>
+          <li class="options__item"><input type="radio" id="option01" name="option" value="フォロー中" checked><label class="c-btn c-btn--primary--rev radio" for="option01">フォロー中</label></li>
+          <li class="options__item"><input type="radio" id="option02" name="option" value="来局済み"><label class="c-btn c-btn--primary--rev radio" for="option02">来局済み</label></li>
+          <li class="options__item"><input type="radio" id="option03" name="option" value="完了"><label class="c-btn c-btn--primary--rev radio" for="option03">完了</label></li>
+          <li class="options__item"><input type="radio" id="option04" name="option" value="ああああああ"><label class="c-btn c-btn--primary--rev radio" for="option04">あああ</label></li>
+        </ul>
+
+        <div class="c-table__wrap">
+          <p class="c-table__result">
+            <span>100</span>件中<span>1〜15</span>件目
+          </p>
+          <table class="c-table">
+            <thead class="c-table__head">
+              <tr>
+                <th class="c-table__head__item">ステータス</th>
+                <th class="c-table__head__item">既/未読</th>
+                <th class="c-table__head__item">名前</th>
+                <th class="c-table__head__item">生年月日</th>
+                <th class="c-table__head__item">最終更新日時</th>
+                <th class="c-table__head__item">最新のタスク</th>
+              </tr>
+            </thead>
+            <tbody class="c-table__body clickable-table">
+              <tr class="c-table__body__wrap sendall" data-href="detail.html">
+                <td class="c-table__body__item">-</td>
+                <td class="c-table__body__item">-</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="../img/icon/icon_thumb-mail.svg" alt="">
+                    <span>一斉送信</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">-</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap try-kun" data-href="detail.html">
+                <td class="c-table__body__item">-</td>
+                <td class="c-table__body__item">-</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>トリーくん</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">-</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap unread" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">未読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap unread" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label">来局済み</span></td>
+                <td class="c-table__body__item read">未読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>Michael Johnthon</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap unread" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">未読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>小山田 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label c-label--border">予約中</span></td>
+                <td class="c-table__body__item read">既読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">既読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">既読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">既読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">既読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">既読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+              <tr class="c-table__body__wrap" data-href="detail.html">
+                <td class="c-table__body__item"><span class="c-label follow">フォロー中</span></td>
+                <td class="c-table__body__item read">既読</td>
+                <td class="c-table__body__item">
+                  <div class="name">
+                    <img src="./img/icon/icon_thumb-try-kun.svg" alt="">
+                    <span>鈴木 一郎</span>
+                  </div>
+                </td>
+                <td class="c-table__body__item">1980/01/23</td>
+                <td class="c-table__body__item">2020/02/02</td>
+                <td class="c-table__body__item">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="c-btn__btm">
+            <button type="button" class="c-btn c-btn--l c-btn--primary--rev">もっと見る</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  <!-- 患者招待 - 1 -->
+  <div class="p-modal invite">
+    <div class="p-modal__box">
+      <h2 class="c-title__primary"><span>患者さんをSentryに招待する</span></h2>
+      <button type="button" class="p-modal__btn--close" data-close="modal">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-modal__contents no-btn scrollbar">
+        <p class="p-modal__lead">レセコンと連携し、直近35日以内に来局された患者さんのデータを表示しています。<br>
+          招待したい患者さんを選んで次の画面へ進んでください。患者氏名や生年月日で検索が可能です。</p>
+        <div class="p-modal__col">
+          <form action="#" class="p-form">
+            <ul class="p-form__option u-mb__30">
+              <li class="options__item">
+                <input class="p-form__parts textbox searchbox" type="text" placeholder="名前もしくは電話番号で検索できます。"><button class="c-btn c-btn--primary submit" type="submit">検索</button>
+              </li>
+              <li class="options__item"><input type="radio" id="option-invite01" name="option-invite" value="未招待" checked=""><label class="c-btn c-btn--primary--rev radio" for="option-invite01">未招待</label></li>
+              <li class="options__item"><input type="radio" id="option-invite02" name="option-invite" value="招待済み"><label class="c-btn c-btn--primary--rev radio" for="option-invite02">招待済み</label></li>
+            </ul>
+            <div class="c-table__wrap">
+              <button class="p-link__box--arrow u-mb__10" data-modal="invite-detail">手動で入力する</button>
+              <table class="c-table invite">
+                <thead class="c-table__head">
+                  <tr>
+                    <th class="c-table__head__item">ステータス</th>
+                    <th class="c-table__head__item">来局日</th>
+                    <th class="c-table__head__item">名前</th>
+                    <th class="c-table__head__item">生年月日</th>
+                    <th class="c-table__head__item">招待した日</th>
+                  </tr>
+                </thead>
+                <tbody class="c-table__body clickable-table">
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item">-</td>
+                    <td class="c-table__body__item">-</td>
+                    <td class="c-table__body__item">自由入力</td>
+                    <td class="c-table__body__item">-</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--invited">招待済み</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                  <tr class="c-table__body__wrap clickable" data-modal="invite-detail">
+                    <td class="c-table__body__item"><span class="c-label c-label--border-blue">未招待</span></td>
+                    <td class="c-table__body__item">2020/02/28</td>
+                    <td class="c-table__body__item">鈴木 一郎</td>
+                    <td class="c-table__body__item">1980/01/23</td>
+                    <td class="c-table__body__item">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="p-modal__bg"></div>
+  </div>
+
+  <!-- 患者招待 - 2 -->
+  <div class="p-modal invite-detail">
+    <div class="p-modal__box active">
+      <h2 class="c-title__primary"><span>患者さんをSentryに招待する</span></h2>
+      <button type="button" class="p-modal__btn--close" data-modal-prompt="edit-profile--prompt">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-modal__contents scrollbar">
+        <p class="p-modal__lead">・入力した患者さんの携帯番号に、SMS（ショートメッセージサービス）で招待案内を送信します。<br>
+          ・患者さんには、受信したメール内のURLをクリックし、アプリをダウンロードするようご案内ください。<br>
+          ・ダウンロード後は、アプリを起動し会員登録をご案内ください。（以下の内容が登録情報に反映されます）</p>
+        <div class="p-modal__col">
+          <form action="#" class="p-modal__form left">
+            <dl class="extend">
+              <dt><label for="invite-name">患者氏名</label></dt>
+              <dd><input class="p-form__parts textbox wide" type="text" name="invite-name" id="invite-name" placeholder="例：鈴木一郎"></dd>
+            </dl>
+            <dl class="extend">
+              <dt><label for="invite-name-kana">カンジャシメイ</label></dt>
+              <dd><input class="p-form__parts textbox wide" type="text" name="invite-name-kana" id="invite-name-kana" placeholder="例：スズキイチロウ"></dd>
+            </dl>
+            
+            <dl>
+              <dt><label for="invite-birth">生年月日</label></dt>
+              <dd><input class="p-form__parts textbox wide" type="text" name="invite-birth" id="invite-birth" placeholder="生年月日"></dd>
+            </dl>
+            <dl>
+              <dt><label for="invite-gender">性別</label></dt>
+              <dd>
+                <ul class="u-flex__start">
+                  <li><input type="radio" name="invite-gender" id="invite-gender01-1" checked><label for="invite-gender01-1" class="p-radio">男性</label></li>
+                  <li class="u-ml__35"><input type="radio" name="invite-gender" id="invite-gender02-1"><label for="invite-gender02-1" class="p-radio">女性</label></li>
+                </ul>
+            </dl>
+
+            <dl>
+              <dt><label for="invite-insurance-num01">被保険者記号</label></dt>
+              <dd><input class="p-form__parts textbox wide" type="text" name="invite-insurance-num01" id="invite-insurance-num01" placeholder="被保険者記号"></dd>
+            </dl>
+            <dl>
+              <dt><label for="invite-insurance-num02">被保険者番号</label></dt>
+              <dd><input class="p-form__parts textbox wide" type="text" name="invite-insurance-num02" id="invite-insurance-num02" placeholder="被保険者番号"></dd>
+            </dl>
+            <dl>
+              <dt><label for="invite-insurance-num03">保険者番号</label></dt>
+              <dd><input class="p-form__parts textbox wide" type="text" name="invite-insurance-num03" id="invite-insurance-num03" placeholder="保険者番号"></dd>
+            </dl>
+
+            <dl class="extend">
+              <dt><label for="invite-tel">携帯電話番号</label></dt>
+              <dd><input class="p-form__parts textbox wide" type="text" name="invite-tel" id="invite-tel" placeholder="例：09012345678"></dd>
+            </dl>
+          </form>
+        </div>
+      </div>
+      <div class="p-modal__btnarea">
+        <button type="button" class="c-btn--l c-btn--primary--rev" data-modal="invite">招待患者リストにもどる</button>
+        <button type="submite" class="c-btn--l c-btn--primary">招待SMSを送信する</button>
+      </div>
+    </div>
+    <div class="p-modal__bg"></div>
+  </div>
+
+  <!-- 患者情報 - 編集中止ダイアログ -->
+  <div class="p-modal edit-profile--prompt">
+    <div class="p-modal__box prompt">
+      <p>編集が未完了です。<br>編集中の内容は変更されませんが、ページを移動しますか？</p>
+      <div class="p-modal__btnarea">
+        <button type="button" class="c-btn--l c-btn--primary" data-close="prompt">編集に戻る</button>
+        <button type="button" class="c-btn--l c-btn--primary--rev" data-modal-prompt="edit-profile--prompt"
+          data-close="all">編集中止</button>
+      </div>
+    </div>
+    <div class="p-modal__bg prompt"></div>
+  </div>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/plugin/perfect-scrollbar.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      $(function(){
+        $(".scrollbar").each(function(){
+          const ps = new PerfectScrollbar($(this)[0]);
+        });
+      });
+    </script> -->
+
+  </body>
+</html>

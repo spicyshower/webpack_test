@@ -8,7 +8,7 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
-    devtool: 'source-map',
+    // devtool: 'source-map',
     entry: './src/js/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -103,6 +103,9 @@ module.exports = {
                     },
                     {
                         loader: 'pug-html-loader',
+                        options: {
+                            pretty: true
+                        }
                     },
                 ]
             },
@@ -121,6 +124,14 @@ module.exports = {
             template: './src/templates/detail.pug',
             filename: 'detail.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/templates/test/index.pug',
+            filename: './test/index.html'
+        }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/templates/test/index.pug',
+        //     filename: 'index.html'
+        // }),
         new CleanWebpackPlugin(),
         new FaviconsWebpackPlugin('./src/favicon.png'),
         new webpack.ProvidePlugin({
