@@ -1,1 +1,1 @@
-# sentry_webpack
+# webpack_test
